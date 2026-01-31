@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #140000, #0b0b0b);
+}
+
+.header h1 {
+  color: #ff2a2a;
+  font-size: 24px;
+}
+
+.header p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.filters button {
+  background: #1a1a1a;
+  color: #ccc;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.filters .active {
+  background: #ff2a2a;
+  color: #fff;
+}
+
+/* TOURNAMENT CARDS */
+.tournament-list {
+  padding: 15px;
+}
+
+.card {
+  background: #141414;
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #1f1f1f;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card .info {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.badge {
+  background: #1f1f1f;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.join-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff2a2a, #ff5f2a);
+  color: #fff;
+  font-size: 14px;
+}
