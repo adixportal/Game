@@ -2,27 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-  background: #0b0b0b;
+  background: radial-gradient(circle at top, #140000, #090909);
   color: #fff;
 }
 
-/* HEADER */
-.header {
-  padding: 20px;
-  text-align: center;
-  background: linear-gradient(180deg, #140000, #0b0b0b);
+/* TOP BAR */
+.topbar {
+  padding: 14px 18px;
+  background: #0b0b0b;
+  border-bottom: 1px solid #1f1f1f;
 }
 
-.header h1 {
+.logo {
+  font-weight: 700;
+  font-size: 18px;
   color: #ff2a2a;
-  font-size: 24px;
 }
 
-.header p {
+/* HERO */
+.hero {
+  padding: 26px 18px;
+}
+
+.hero h1 {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.hero p {
+  margin-top: 6px;
   color: #aaa;
   font-size: 14px;
 }
@@ -31,67 +43,84 @@ body {
 .filters {
   display: flex;
   gap: 10px;
-  padding: 15px;
+  padding: 0 18px 18px;
   overflow-x: auto;
 }
 
 .filters button {
-  background: #1a1a1a;
-  color: #ccc;
-  border: none;
-  padding: 8px 14px;
+  background: #161616;
+  color: #bbb;
+  border: 1px solid #222;
+  padding: 8px 16px;
   border-radius: 20px;
   font-size: 13px;
 }
 
 .filters .active {
-  background: #ff2a2a;
+  background: linear-gradient(90deg, #ff2a2a, #ff6a2a);
   color: #fff;
+  border: none;
 }
 
-/* TOURNAMENT CARDS */
+/* TOURNAMENT LIST */
 .tournament-list {
-  padding: 15px;
-}
-
-.card {
-  background: #141414;
-  border-radius: 14px;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #1f1f1f;
-}
-
-.card h3 {
-  font-size: 16px;
-  margin-bottom: 6px;
-}
-
-.card .info {
-  font-size: 13px;
-  color: #aaa;
-  margin-bottom: 10px;
-}
-
-.badges {
+  padding: 0 18px 30px;
   display: flex;
-  gap: 8px;
-  margin-bottom: 12px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* CARD */
+.card {
+  background: linear-gradient(180deg, #141414, #0f0f0f);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #1f1f1f;
+  box-shadow: 0 8px 30px rgba(0,0,0,.6);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 16px;
+}
+
+.status {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #1f1f1f;
+  color: #ffb3b3;
+}
+
+.card-info {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .badge {
-  background: #1f1f1f;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 11px;
+  background: #1b1b1b;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #ccc;
 }
 
+/* JOIN BUTTON */
 .join-btn {
+  margin-top: 14px;
   width: 100%;
-  padding: 12px;
+  padding: 13px;
   border: none;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #ff2a2a, #ff5f2a);
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff2a2a, #ff6a2a);
   color: #fff;
   font-size: 14px;
+  font-weight: 600;
 }
